@@ -5,11 +5,14 @@ import RecHeader1 from "../public/subheader-rec.svg";
 import MainScreen from "../public/main-screen.png";
 import Analytics from "../public/analytics.svg";
 import Subtract from "../public/subtract.svg";
+import IconComputer from "../public/icon-computer.svg";
+import IconPlanning from "../public/icon-planning.svg";
+import IconSpeed from "../public/icon-speed.svg";
 import Image from "next/future/image";
 
 const Home: NextPage = () => {
   return (
-    <div className="w-full flex justify-center relative text-gray-900 ">
+    <div className="w-full  relative text-gray-900 ">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -72,8 +75,43 @@ const Home: NextPage = () => {
             </div>
           </div>
         </header>
-        <main>
-
+        <main className="flex  justify-center w-full bg-yellow-50 h-screen  ">
+            <section className="container flex flex-col  px-24 items-center">
+              <h1 className="text-4xl font-bold text-main">Main Features</h1>
+              <p className="text-secondary text-[19px] mt-10 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet. Id vel in nam malesuada.</p>
+              <div className="flex mt-16">
+                <div className="flex flex-col justify-center items-center">
+                <Image
+                    className="fill-red"
+                    alt="icone computer"
+                    src={IconComputer}
+                  />
+                  <h3  className="text-main my-5">Monitoring 24/7</h3>
+                  <p className="text-secondary text-center">Lorem ipsum dolor sit amet, consectetur adipis
+cing elit. Elementum nisi aliquet volutpat.</p>
+                </div>
+                <div className="flex flex-col justify-center items-center">
+                <Image
+                    className="fill-red"
+                    alt="icone computer"
+                    src={IconPlanning}
+                  />
+                  <h3  className="text-main my-5">Monitoring 24/7</h3>
+                  <p className="text-secondary text-center">Lorem ipsum dolor sit amet, consectetur adipis
+cing elit. Elementum nisi aliquet volutpat.</p>
+                </div>
+                <div className="flex flex-col justify-center items-center">
+                <Image
+                    className="fill-red"
+                    alt="icone computer"
+                    src={IconSpeed}
+                  />
+                  <h3 className="text-main my-5">Monitoring 24/7</h3>
+                  <p  className="text-secondary text-center">Lorem ipsum dolor sit amet, consectetur adipis
+cing elit. Elementum nisi aliquet volutpat.</p>
+                </div>
+              </div>
+            </section>
         </main>
         <footer>
         </footer>
